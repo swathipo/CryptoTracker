@@ -1,0 +1,33 @@
+<div class="coin_details" *ngIf="details">
+    <div>
+        <label>{{details.coin_name}} | {{details.coin_id}} </label>
+    </div>
+    <div>
+        <label>Price:
+        </label>
+        <span>{{details.last_price | currency : 'USD': 'symbol-narrow' : '.2'}}</span>
+    </div>
+    <div>
+        <label>24-Hour Volume:
+        </label>
+        <span>{{details.volume_24hr | currency : 'USD': 'symbol-narrow' : '.2'}}</span>
+    </div>
+    <div>
+        <label>$100 =
+        </label>
+        <span> {{details.last_price  | coinsBasedOfPrice : 100}} coins</span>
+    </div>
+    <div>
+        <label>$250  =
+        </label>
+        <span>{{details.last_price | coinsBasedOfPrice : 250}} coins</span>
+    </div>
+    <div>
+        <label>$5000 =
+        </label>
+        <span>{{details.last_price | coinsBasedOfPrice : 5000}} coins</span>
+    </div>
+    <a class="button" routerLink="/views">Back To View Coins</a>
+
+</div>
+

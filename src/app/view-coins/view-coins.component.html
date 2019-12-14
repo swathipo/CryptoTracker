@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+     <tr>
+         <th> Name</th>
+         <th>Currency</th>
+         <th>Latest Price</th>
+         <th></th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let coin of coins | async">
+        <td>{{coin.coin_name}}</td>
+        <td>{{coin.coin_id}}</td>
+        <td >{{coin.last_price | currency : 'USD': 'symbol-narrow' : '.2'}}</td>
+        <td><a class="button" routerLink='/details' [queryParams]="{'currency': coin.coin_id}">Details</a></td>
+    </tr>
+    </tbody>
+</table>
+
