@@ -1,3 +1,7 @@
+<img width="1361" alt="Screen Shot 2019-12-13 at 8 23 12 PM" src="https://user-images.githubusercontent.com/57022391/70841307-635e5980-1de7-11ea-9924-b0091679e100.png">
+<img width="1354" alt="Screen Shot 2019-12-13 at 8 23 23 PM" src="https://user-images.githubusercontent.com/57022391/70841312-6f4a1b80-1de7-11ea-8fa2-9e07f088ea4f.png">
+
+
 # CryptoTracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
